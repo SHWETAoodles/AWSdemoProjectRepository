@@ -1,0 +1,25 @@
+cloud:
+  aws:
+    credentials:
+      access-key: AKIAXUZS2RGQPLF5FGNZ
+      secret-key: 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
+    region:
+      static: us-east-2
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name: awsdemostorage
+
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2MB
+      max-file-size: 5MB
+      max-request_size: 10MB
+
+server:
+  port: 9000
